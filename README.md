@@ -11,36 +11,55 @@ photographic styles while preserving prompt control.
 > portfolio case study and is not affiliated with or endorsed by the depicted
 > person. Training images and model weights are intentionally not included.
 
-## Results
+## After-training results
 
-The same fixed studio prompt shows how the learned identity developed during
-training:
+These are the primary results generated after the fine-tuning run was
+completed. The first three images have their original prompts documented in
+the [post-training gallery](POST_TRAINING_SAMPLES.md); the remaining seven are
+published without prompt text.
 
-| Baseline (step 0) | First run (step 2,500) | Final (step 5,000) |
+| Prompt 1 — studio portrait | Prompt 2 — campaign portrait | Prompt 3 — cinematic portrait |
 |---|---|---|
-| ![Baseline sample](assets/progression-step-0000.jpg) | ![Step 2500 sample](assets/progression-step-2500.jpg) | ![Step 5000 sample](assets/progression-step-5000.jpg) |
+| ![After-training studio portrait](assets/post-training/captioned/prompt-01.png) | ![After-training beverage campaign portrait](assets/post-training/captioned/prompt-02.png) | ![After-training cinematic portrait](assets/post-training/captioned/prompt-03.png) |
 
-The final checkpoint generalized across several prompts:
+### Additional results without prompts
 
-| Window portrait | Full-body rooftop scene |
-|---|---|
-| ![Window portrait](assets/final-window-portrait.jpg) | ![Rooftop scene](assets/final-rooftop-full-body.jpg) |
+| Sample 1 | Sample 2 | Sample 3 | Sample 4 |
+|---|---|---|---|
+| ![Uncaptioned after-training sample 1](assets/post-training/uncaptioned/sample-01.png) | ![Uncaptioned after-training sample 2](assets/post-training/uncaptioned/sample-02.png) | ![Uncaptioned after-training sample 3](assets/post-training/uncaptioned/sample-03.png) | ![Uncaptioned after-training sample 4](assets/post-training/uncaptioned/sample-04.png) |
 
-| Expression change | Monochrome control |
-|---|---|
-| ![Laughing portrait](assets/final-laughing-portrait.jpg) | ![Black-and-white portrait](assets/final-monochrome-portrait.jpg) |
+| Sample 5 | Sample 6 | Sample 7 |
+|---|---|---|
+| ![Uncaptioned after-training sample 5](assets/post-training/uncaptioned/sample-05.png) | ![Uncaptioned after-training sample 6](assets/post-training/uncaptioned/sample-06.png) | ![Uncaptioned after-training sample 7](assets/post-training/uncaptioned/sample-07.png) |
 
-## Additional post-training samples
-
-The expanded gallery includes three generated images with their original
-prompts, seven additional outputs for which prompt metadata was not recorded,
-and two contact sheets showing consistency across coordinated shoots.
-
-[View all post-training samples and prompts](POST_TRAINING_SAMPLES.md).
+### Coordinated-shoot contact sheets
 
 | Shoot 1 — green dress | Shoot 2 — blue dress |
 |---|---|
 | ![Green-dress shoot contact sheet](assets/post-training/collages/shoot-01-collage.jpg) | ![Blue-dress shoot contact sheet](assets/post-training/collages/shoot-02-collage.jpg) |
+
+## During-training evaluation samples
+
+The following images are intermediate evaluation samples captured during
+training. They are kept to document progression and should not be confused with
+the completed-model results above.
+
+The same fixed studio prompt shows how the learned identity developed over the
+run:
+
+| Baseline (step 0) | First run (step 2,500) | Resumed run (step 5,000) |
+|---|---|---|
+| ![Baseline training sample](assets/progression-step-0000.jpg) | ![Training sample at step 2500](assets/progression-step-2500.jpg) | ![Training sample at step 5000](assets/progression-step-5000.jpg) |
+
+Additional evaluation generations captured during training:
+
+| Window portrait | Full-body rooftop scene |
+|---|---|
+| ![During-training window portrait](assets/final-window-portrait.jpg) | ![During-training rooftop scene](assets/final-rooftop-full-body.jpg) |
+
+| Expression change | Monochrome control |
+|---|---|
+| ![During-training laughing portrait](assets/final-laughing-portrait.jpg) | ![During-training black-and-white portrait](assets/final-monochrome-portrait.jpg) |
 
 ## Training setup
 
