@@ -93,6 +93,30 @@ cropping. They provide a compact view of consistency across pose and framing.
 
 ![Shoot 2 contact sheet](assets/post-training/collages/shoot-02-collage.jpg)
 
+## Advertising and commercial concepts
+
+These seven outputs test commercial compositions across beverage, fragrance,
+jewellery, and lifestyle imagery. No prompt text is published for them.
+
+They are unofficial, AI-generated portfolio concepts. They were not
+commissioned, sponsored, or endorsed by any brand shown or referenced.
+
+| Campaign concept 1 | Campaign concept 2 |
+|---|---|
+| ![Advertising concept 1](assets/post-training/advertising/ad-01.png) | ![Advertising concept 2](assets/post-training/advertising/ad-02.png) |
+
+| Campaign concept 3 | Campaign concept 4 |
+|---|---|
+| ![Advertising concept 3](assets/post-training/advertising/ad-03.png) | ![Advertising concept 4](assets/post-training/advertising/ad-04.png) |
+
+| Campaign concept 5 | Campaign concept 6 |
+|---|---|
+| ![Advertising concept 5](assets/post-training/advertising/ad-05.png) | ![Advertising concept 6](assets/post-training/advertising/ad-06.png) |
+
+| Campaign concept 7 |
+|---|
+| ![Advertising concept 7](assets/post-training/advertising/ad-07.png) |
+
 ## Reading the examples
 
 These are qualitative demonstrations rather than a benchmark. They are useful

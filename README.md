@@ -11,6 +11,29 @@ photographic styles while preserving prompt control.
 > portfolio case study and is not affiliated with or endorsed by the depicted
 > person. Training images and model weights are intentionally not included.
 
+## During-training evaluation samples
+
+The following images are intermediate evaluation samples captured during
+training. They document the model's progression before the completed-model
+results shown in the next section.
+
+The same fixed studio prompt shows how the learned identity developed over the
+run:
+
+| Baseline (step 0) | First run (step 2,500) | Resumed run (step 5,000) |
+|---|---|---|
+| ![Baseline training sample](assets/progression-step-0000.jpg) | ![Training sample at step 2500](assets/progression-step-2500.jpg) | ![Training sample at step 5000](assets/progression-step-5000.jpg) |
+
+Additional evaluation generations captured during training:
+
+| Window portrait | Full-body rooftop scene |
+|---|---|
+| ![During-training window portrait](assets/final-window-portrait.jpg) | ![During-training rooftop scene](assets/final-rooftop-full-body.jpg) |
+
+| Expression change | Monochrome control |
+|---|---|
+| ![During-training laughing portrait](assets/final-laughing-portrait.jpg) | ![During-training black-and-white portrait](assets/final-monochrome-portrait.jpg) |
+
 ## After-training results
 
 These are the primary results generated after the fine-tuning run was
@@ -38,28 +61,20 @@ published without prompt text.
 |---|---|
 | ![Green-dress shoot contact sheet](assets/post-training/collages/shoot-01-collage.jpg) | ![Blue-dress shoot contact sheet](assets/post-training/collages/shoot-02-collage.jpg) |
 
-## During-training evaluation samples
+### Advertising / commercial results
 
-The following images are intermediate evaluation samples captured during
-training. They are kept to document progression and should not be confused with
-the completed-model results above.
+These post-training outputs explore beverage, fragrance, jewellery, and
+lifestyle campaign compositions. No prompt text is published for these images.
+They are unofficial AI-generated concepts and are not commissioned, sponsored,
+or endorsed by any brand shown or referenced.
 
-The same fixed studio prompt shows how the learned identity developed over the
-run:
+| Campaign concept 1 | Campaign concept 2 | Campaign concept 3 | Campaign concept 4 |
+|---|---|---|---|
+| ![Advertising result 1](assets/post-training/advertising/ad-01.png) | ![Advertising result 2](assets/post-training/advertising/ad-02.png) | ![Advertising result 3](assets/post-training/advertising/ad-03.png) | ![Advertising result 4](assets/post-training/advertising/ad-04.png) |
 
-| Baseline (step 0) | First run (step 2,500) | Resumed run (step 5,000) |
+| Campaign concept 5 | Campaign concept 6 | Campaign concept 7 |
 |---|---|---|
-| ![Baseline training sample](assets/progression-step-0000.jpg) | ![Training sample at step 2500](assets/progression-step-2500.jpg) | ![Training sample at step 5000](assets/progression-step-5000.jpg) |
-
-Additional evaluation generations captured during training:
-
-| Window portrait | Full-body rooftop scene |
-|---|---|
-| ![During-training window portrait](assets/final-window-portrait.jpg) | ![During-training rooftop scene](assets/final-rooftop-full-body.jpg) |
-
-| Expression change | Monochrome control |
-|---|---|
-| ![During-training laughing portrait](assets/final-laughing-portrait.jpg) | ![During-training black-and-white portrait](assets/final-monochrome-portrait.jpg) |
+| ![Advertising result 5](assets/post-training/advertising/ad-05.png) | ![Advertising result 6](assets/post-training/advertising/ad-06.png) | ![Advertising result 7](assets/post-training/advertising/ad-07.png) |
 
 ## Training setup
 
