@@ -37,13 +37,58 @@ Additional evaluation generations captured during training:
 ## After-training results
 
 These are the primary results generated after the fine-tuning run was
-completed. The first three images have their original prompts documented in
-the [post-training gallery](POST_TRAINING_SAMPLES.md); the remaining seven are
-published without prompt text.
+completed. The first three images are shown with their supplied prompts. The
+remaining seven are published without prompt text. A focused version of this
+gallery is also available in [Post-Training Generation Samples](POST_TRAINING_SAMPLES.md).
 
-| Prompt 1 — studio portrait | Prompt 2 — campaign portrait | Prompt 3 — cinematic portrait |
-|---|---|---|
-| ![After-training studio portrait](assets/post-training/captioned/prompt-01.png) | ![After-training beverage campaign portrait](assets/post-training/captioned/prompt-02.png) | ![After-training cinematic portrait](assets/post-training/captioned/prompt-03.png) |
+### Prompt 1 — studio portrait
+
+![After-training studio portrait](assets/post-training/captioned/prompt-01.png)
+
+> `hania_01` sits on a wooden chair against a plain warm gray studio
+> background, wearing a dark brown high-neck top, soft even studio lighting;
+> framed from the waist up, centered.
+
+### Prompt 2 — beverage campaign portrait
+
+![After-training beverage campaign portrait](assets/post-training/captioned/prompt-02.png)
+
+> `hania_01` in a professional Coca-Cola advertising campaign portrait,
+> wearing an elegant modest red long-sleeve fashion dress with a high closed
+> neckline, fully covered chest, tailored waist and sophisticated contemporary
+> styling. She wears small polished gold earrings and a delicate gold necklace.
+> Her dark hair is styled in polished soft waves.
+>
+> Medium close-up composition. `hania_01` holds a cold glass Coca-Cola bottle
+> beside her face without covering any facial features. The bottle is covered
+> with realistic cold condensation droplets, the red Coca-Cola label facing
+> directly toward the camera and clearly readable.
+>
+> She gives a natural cheerful smile while looking directly into the lens. Her
+> expression feels spontaneous, friendly and refreshing rather than overly
+> posed.
+>
+> Bright clean commercial studio environment with a red gradient background,
+> subtle sparkling highlights, soft rim light around her hair and shoulders,
+> crisp product illumination on the bottle and soft flattering illumination
+> across her face.
+>
+> Leave clean negative space above and beside her for advertising headline
+> placement.
+>
+> High-budget beverage advertising photography, professional product campaign,
+> realistic bottle proportions, realistic fingers around the bottle, detailed
+> condensation, natural skin texture, crisp facial focus, premium commercial
+> photography, photorealistic, vertical 2:3 advertising poster.
+
+### Prompt 3 — cinematic portrait
+
+![After-training cinematic portrait](assets/post-training/captioned/prompt-03.png)
+
+> Close-up portrait of `hania_01` on a cinematic film set, wearing an elegant
+> dark green dress, calm emotional expression, slightly parted lips, subtle
+> intensity in her eyes, looking just past the camera, soft dramatic key light
+> across her face, shallow depth of field, realistic cinematic actress portrait.
 
 ### Additional results without prompts
 
