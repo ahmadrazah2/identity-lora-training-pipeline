@@ -1,0 +1,43 @@
+# Private or redistributability-sensitive data
+datasets/
+data/
+raw/
+source_media/
+captions/
+
+# Model artifacts
+checkpoints/
+output/
+weights/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+
+# Logs and archives
+logs/
+*.log
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.mp4
+*.mov
+*.mkv
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Python/editor files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store

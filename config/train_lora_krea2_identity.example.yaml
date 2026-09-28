@@ -1,0 +1,78 @@
+---
+# Sanitized ai-toolkit example matching the portfolio run.
+# Update folder_path and text_encoder_path before running.
+job: extension
+config:
+  name: "hania_01_krea2_v1"
+  process:
+    - type: "sd_trainer"
+      training_folder: "output"
+      device: "cuda:0"
+      trigger_word: "hania_01"
+
+      network:
+        type: "lora"
+        linear: 32
+        linear_alpha: 32
+
+      save:
+        dtype: "float16"
+        save_every: 250
+        max_step_saves_to_keep: 3
+        push_to_hub: false
+
+      datasets:
+        - folder_path: "/absolute/path/to/captioned-dataset"
+          caption_ext: "txt"
+          caption_dropout_rate: 0.05
+          shuffle_tokens: false
+          cache_latents_to_disk: true
+          resolution: [1024]
+
+      train:
+        batch_size: 1
+        steps: 5000
+        gradient_accumulation_steps: 1
+        train_unet: true
+        train_text_encoder: false
+        gradient_checkpointing: true
+        noise_scheduler: "flowmatch"
+        timestep_type: "linear"
+        optimizer: "adamw8bit"
+        lr: 1.0e-4
+        dtype: "bf16"
+        ema_config:
+          use_ema: false
+
+      model:
+        name_or_path: "krea/Krea-2-Raw"
+        arch: "krea2"
+        quantize: true
+        quantize_te: true
+        low_vram: false
+        model_kwargs:
+          text_encoder_path: "/absolute/path/to/Qwen3-VL-4B-Instruct"
+          vae_path: "krea/Krea-2-Raw"
+
+      sample:
+        sampler: "flowmatch"
+        sample_every: 250
+        sample_start_step: 0
+        width: 1024
+        height: 1024
+        prompts:
+          - "hania_01 stands centered against a plain white background under even studio lighting, wearing a black turtleneck, neutral expression, looking directly at the camera; framed from the chest up."
+          - "hania_01 sits beside a window in a bright room, wearing a cream linen shirt, soft daylight falling from the left; framed from the waist up, positioned slightly right of center."
+          - "hania_01 stands outdoors on a rooftop at golden hour, wearing a deep green saree with gold border trim, warm low sunlight casting long shadows; full-body framing, centered."
+          - "hania_01 sits cross-legged on a beige cushion against a plain cream wall, wearing an ornate red embroidered salwar kameez with a pink patterned dupatta draped over her shoulders, smiling gently under soft even lighting."
+          - "hania_01 laughs while turned three-quarters toward the camera, wearing a light blue shirt, soft diffused daylight; upper-body portrait."
+          - "hania_01 leans against a brick wall under dramatic side lighting, wearing a black ribbed top; framed from the chest up. The photograph is in black and white."
+        neg: ""
+        seed: 42
+        walk_seed: true
+        guidance_scale: 4
+        sample_steps: 25
+
+meta:
+  name: "[name]"
+  version: "1.0"
