@@ -30,6 +30,18 @@ The final checkpoint generalized across several prompts:
 |---|---|
 | ![Laughing portrait](assets/final-laughing-portrait.jpg) | ![Black-and-white portrait](assets/final-monochrome-portrait.jpg) |
 
+## Additional post-training samples
+
+The expanded gallery includes three generated images with their original
+prompts, seven additional outputs for which prompt metadata was not recorded,
+and two contact sheets showing consistency across coordinated shoots.
+
+[View all post-training samples and prompts](POST_TRAINING_SAMPLES.md).
+
+| Shoot 1 — green dress | Shoot 2 — blue dress |
+|---|---|
+| ![Green-dress shoot contact sheet](assets/post-training/collages/shoot-01-collage.jpg) | ![Blue-dress shoot contact sheet](assets/post-training/collages/shoot-02-collage.jpg) |
+
 ## Training setup
 
 | Item | Value |
@@ -108,6 +120,7 @@ memory. Hardware requirements depend on the current ai-toolkit and model setup.
 ├── assets/          # Selected AI-generated evaluation samples
 ├── config/          # Sanitized ai-toolkit training configuration
 ├── scripts/         # Reusable dataset preparation utility
+├── POST_TRAINING_SAMPLES.md # Prompted and uncaptioned output gallery
 ├── MODEL_CARD.md    # Scope, limitations, and responsible-use notes
 └── README.md
 ```
